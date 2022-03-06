@@ -1,0 +1,246 @@
+html {
+  font-size: 62.5%;
+  font-family: "Inter", sans-serif;
+  overflow-x: 0;
+}
+:root {
+  --color-primary: #000000;
+  --color-secondary: #4d13d1;
+  --color-hero: #fbf8f3;
+}
+ul {
+  list-style: none;
+  color: var(--color-text);
+  padding-left: 0;
+}
+
+li a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.container {
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+/*nav bar*/
+
+nav {
+  background: var(--color-hero);
+  padding-bottom: 0;
+}
+
+.btn {
+  font-weight: 700;
+}
+.btn-purple {
+  color: white;
+  outline: none;
+  border: none;
+  padding: 1.3rem;
+  border-radius: 8px;
+  background: var(--color-secondary);
+  cursor: pointer;
+}
+.buttons li {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    padding: 1rem 15rem 1rem 15rem;
+  }
+}
+
+/*hero*/
+
+.hero {
+  background-color: var(--color-hero);
+
+  font-size: 1.8rem;
+}
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-container p {
+  margin-top: 0;
+}
+.hero-container h1 {
+  margin-bottom: 1rem;
+}
+
+.hero__img {
+  width: 310px;
+}
+.hero p {
+  color: #4f4f4f;
+  font-weight: 500;
+}
+.hero__content {
+  display: flex;
+  flex-direction: column;
+}
+.btn-inline {
+  display: inline;
+}
+.btn-underline {
+  color: var(--color-secondary);
+  text-decoration: underline;
+  align-self: center;
+  padding: 2rem;
+}
+.trial__desc .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.trial__desc p {
+  display: inline;
+}
+.tick__icon {
+  float: left;
+}
+.trial__desc img {
+  width: 24px;
+  margin-right: 0.5rem;
+  position: relative;
+  bottom: 4px;
+}
+.trial__desc--list li {
+  margin: 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .hero__banner {
+    order: 2;
+  }
+  .hero__img {
+    width: 700px;
+    position: relative;
+    left: 50px;
+    bottom: 55px;
+  }
+  .hero__content h1 {
+    font-size: 7.5rem;
+  }
+  .btn-inline {
+    width: 170px;
+    padding: 1.4rem;
+    display: inline-block;
+  }
+  .btn-underline {
+    display: inline-block;
+  }
+  .hero__content {
+    display: block;
+  }
+  .trial__desc--list {
+    display: flex;
+    flex-direction: row;
+  }
+  .trial__desc--list li {
+    margin-right: 0.65rem;
+  }
+}
+
+/*article header*/
+
+.article__header {
+  margin-top: 4rem;
+  font-size: 1.65rem;
+}
+.article__header h3 {
+  color: var(--color-secondary);
+}
+.article__header h2 {
+  font-size: 3rem;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0 1rem 0;
+}
+.feature {
+  margin: 1rem 0 1rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .features {
+    display: grid;
+    font-size: 1.8rem;
+    gap: 25rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 2rem;
+  }
+}
+/*article body*/
+
+.article__body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  background-color: var(--color-secondary);
+  border-radius: 10px;
+  color: white;
+}
+.article__bodycontent {
+  padding: 3rem 3rem 0 3rem;
+}
+.article__bodycontent h2 {
+  font-size: 3rem;
+}
+.btn-white {
+  background: white;
+  color: var(--color-secondary);
+  width: 250px;
+}
+.article__bodyimg img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-top: 5rem;
+  width: 250px;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .article__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .article__bodycontent {
+    width: 50rem;
+    padding: 0;
+  }
+  .article__bodycontent h2 {
+    font-size: 3.3rem;
+  }
+  .article__bodycontent p {
+    font-size: 1.7rem;
+    color: #d9d2eb;
+  }
+  .article__bodyimg {
+    overflow: hidden;
+  }
+  .article__bodyimg img {
+    width: 800px;
+  }
+  .btn-white {
+    width: 150px;
+    padding: 1.5rem;
+    font-size: 1.3rem;
+  }
+}
