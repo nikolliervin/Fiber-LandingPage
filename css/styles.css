@@ -233,7 +233,6 @@ nav {
     color: #d9d2eb;
   }
   .article__bodyimg {
-    overflow: hidden;
   }
   .article__bodyimg img {
     width: 800px;
