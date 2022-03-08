@@ -515,9 +515,7 @@ em a {
     grid-template-rows: 1fr;
     height: 105vh;
   }
-  body {
-    overflow: hidden;
-  }
+
   .right__content {
     display: grid;
     justify-items: center;
